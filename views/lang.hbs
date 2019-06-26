@@ -1,25 +1,14 @@
-<h1>Search</h1>
+<h1>Lang</h1>
 
 <p>Where do you live?</p>
 
-{{!-- TODO: add a form --}}
-
-{{#ifEquals lang "pt"}}
-  Olá!
-{{/ifEquals}}
-
-{{#ifEquals lang "en"}}
-  Hello!
-{{/ifEquals}}
-
-{{#ifEquals lang "it"}}
-  Ciao!
-{{/ifEquals}}
-
-{{#ifEquals lang "de"}}
-  Hallo!
-{{/ifEquals}}
-
-{{#ifEquals lang "fr"}}
-  Sallut!
-{{/ifEquals}}
+<form action="/lang-output" method="get">
+  <select name="language">
+    <option value="pt">Portuguese</option>
+    <option value="en">English</option>
+    <option value="it">Italian</option>
+    <option value="de">German</option>
+    <option value="fr">French</option>
+  </select>
+  <button type="submit">Submit</button>
+</form>
